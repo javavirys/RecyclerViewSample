@@ -21,4 +21,10 @@ class UserAdapter : RecyclerView.Adapter<UserViewHolder>() {
     }
 
     override fun getItemCount() = userList.size
+
+    fun setItems(users: List<User>) {
+        userList.clear()
+        userList.addAll(users)
+        notifyDataSetChanged()
+    }
 }
