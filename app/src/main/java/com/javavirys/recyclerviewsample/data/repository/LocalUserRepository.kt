@@ -6,7 +6,7 @@ import com.javavirys.recyclerviewsample.domain.repository.UserRepository
 
 class LocalUserRepository : UserRepository {
 
-    override fun getAll() = listOf(
+    override suspend fun getAll() = listOf(
         User(0, "Vitaliy Sychov", "Middle Android developer", R.drawable.ic_vitaliy),
         User(1, "Vyacheslav Gvozdetskiy", "Senior PHP developer", R.drawable.ic_vyacheslav),
         User(2, "Juliya Pushkina", "Quality assurance engineer", R.drawable.ic_julia),
