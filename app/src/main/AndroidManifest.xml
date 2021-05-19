@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RecyclerViewSample">
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".presentation.screen.MainActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
